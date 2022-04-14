@@ -58,7 +58,6 @@ const options = [
 export default defineComponent({
 	computed: {
 		currentCard () {
-			console.log('CURRENT CARD CHANGED!')
 			return this.$store.getters['app/getCurrentCard']
 		}
 	},
@@ -94,7 +93,6 @@ export default defineComponent({
 			}
 		},
 		updateCard (card) {
-			console.log('## UPDATE CARD : ', card);
 			this.$store.dispatch('app/updateCard', card)
 		},
 		handleCancelCard () {

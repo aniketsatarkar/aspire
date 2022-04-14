@@ -15,11 +15,10 @@ export function updateCard (state, card) {
     for (const index in state.cards) {
         if (state.cards[index].cardNumber === card.cardNumber) {
             state.cards[index] = card
+            state.currentCard = card
             return
         }
     }
-
-    state.currentCard = card
 }
 
 export function cancelCard (state, card) {
