@@ -1,20 +1,21 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered :breakpoint="1300" style="background-color: #0C365A;">
-
-      <div style="margin-left: 40px; margin-top:40px; padding-right: 20px;">
-        <q-img src="img/Aspire_Logo.svg" style="width: 125px; height: 35px;" />
-        <p class="q-mt-md" style="font-size: 15px; color: #FFFFFF; opacity: 0.3; font-weight: 300;">
+    <q-drawer
+      v-if="!$isPhone"
+      v-model="leftDrawerOpen"
+      show-if-above
+      bordered
+      :breakpoint="1300"
+    >
+      <div class="drawer-header">
+        <q-img src="img/Aspire_Logo.svg" />
+        <p class="q-mt-md">
           Trusted way of banking for 3,000+ SMEs and startups in Singapore
         </p>
       </div>
 
-      <q-list style="margin-top: 65px">
-        <main-menu
-          v-for="link in menuLinks"
-          :key="link.title"
-          v-bind="link"
-        />
+      <q-list>
+        <main-menu v-for="link in menuLinks" :key="link.title" v-bind="link" />
       </q-list>
     </q-drawer>
 
@@ -77,3 +78,33 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss">
+.q-drawer-container {
+  aside > div {
+    background-color: #0c365a !important;
+  }
+
+  .drawer-header {
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-right: 20px;
+
+    .q-img {
+      width: 125px;
+      height: 35px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #ffffff;
+      opacity: 0.3;
+      font-weight: 300;
+    }
+  }
+
+  .q-list {
+    margin-top: 65px;
+  }
+}
+</style>

@@ -12,9 +12,9 @@
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
-$primary: #01D167;
-$secondary: #0C365A;
-$accent: #23CEFD;
+$primary: #01d167;
+$secondary: #0c365a;
+$accent: #23cefd;
 
 $dark: #1d1d1d;
 
@@ -23,8 +23,8 @@ $negative: #c10015;
 $info: #31ccec;
 $warning: #f2c037;
 
-@media only screen and (max-width: 600px) {
-    body {
-        min-width: 768px !important;
-    }
+@media only screen and (max-width: 480px) {
+  body {
+    min-width: 480px !important;
+  }
 }
