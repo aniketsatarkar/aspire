@@ -8,7 +8,7 @@
   >
     <q-card>
       <q-card-section>
-        <div class="text-h6 text-primary">Add Card</div>
+        <div class="text-primary" style="font-size: 16px">Add Card</div>
       </q-card-section>
 
       <q-card-section class="q-pt-none">
@@ -51,7 +51,7 @@
 
       <q-card-actions align="right">
         <q-btn flat label="Cancel" color="default" v-close-popup />
-        <q-btn flat label="Add" color="primary" @click="handleSubmit" />
+        <q-btn flat label="Add" color="accent" @click="handleSubmit" />
       </q-card-actions>
     </q-card>
   </q-dialog>
