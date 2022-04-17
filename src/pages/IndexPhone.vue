@@ -1,5 +1,5 @@
 <template>
-  <q-page class="phone-margin phone-background">
+  <q-page class="phone-page-margin phone-background">
     <div class="scroll-container">
       <div class="fixed">
         <!-- header -->
@@ -98,16 +98,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.phone-margin {
+.phone-page-margin {
   margin: 0px;
-}
-
-.card-form {
-  min-width: 350px;
-
-  .q-btn {
-    font-size: 16px;
-  }
 }
 
 .phone-background {

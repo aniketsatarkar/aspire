@@ -1,5 +1,5 @@
 <template>
-  <q-page class="web-margin">
+  <q-page class="web-page-margin">
     <div class="row">
       <div class="col-12" style="font-size: 14px; margin-bottom: 18px">
         Available balance
@@ -122,23 +122,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.phone-margin {
-  margin: 0px;
-}
-
-.web-margin {
+.web-page-margin {
   margin: 40px;
-}
-
-.card-form {
-  min-width: 350px;
-
-  .q-btn {
-    font-size: 16px;
-  }
-}
-
-.phone-background {
-  background-color: #0c365a;
 }
 </style>
