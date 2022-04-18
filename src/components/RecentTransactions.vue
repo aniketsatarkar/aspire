@@ -55,27 +55,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style lang="scss" scoped>
-.transactions {
-  margin: 10px;
-  padding: 25px;
-  border-radius: 15px;
-  background-color: #f5f9ff;
-  box-shadow: 0px 0px 8px 0px #00000014;
-
-  .q-img {
-    width: 24px;
-    height: 24px;
-  }
-}
-
-.view-all-btn {
-  padding: 15px;
-  background-color: #edfff5;
-  text-align: center;
-  border: 1px solid #ddffec;
-  color: #01d167;
-  font-weight: 500;
-}
-</style>

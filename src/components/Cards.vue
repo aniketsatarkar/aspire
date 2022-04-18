@@ -83,32 +83,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style lang="scss">
-@media (min-width: 767px) {
-  .q-carousel {
-    margin-top: -20px;
-  }
-}
-
-@media (max-width: 767px) {
-  .q-carousel {
-    margin-top: 0px;
-  }
-}
-
-.q-carousel {
-  background-color: transparent;
-  margin-bottom: -40px;
-
-  button {
-    font-size: 0.5em !important;
-  }
-  .q-carousel__slide {
-    justify-content: unset !important;
-  }
-  .q-carousel__navigation--bottom {
-    bottom: 50px !important;
-  }
-}
-</style>

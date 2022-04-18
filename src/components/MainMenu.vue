@@ -1,12 +1,12 @@
 <template>
   <q-item clickable tag="a" target="_blank">
     <q-item-section v-if="icon" avatar>
-      <q-img :src="icon" class="item-icon" />
+      <q-img :src="icon" class="menu-item-icon" />
     </q-item-section>
 
-    <q-item-section class="item-section">
+    <q-item-section class="menu-item-section">
       <q-item-label
-        :class="{ 'item-lable': true, 'item-lable-active': active }"
+        :class="{ 'menu-item-lable': true, 'menu-item-lable-active': active }"
         >{{ title }}</q-item-label
       >
     </q-item-section>
@@ -34,23 +34,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped>
-.item-section {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-.item-lable {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 400;
-}
-.item-lable-active {
-  color: #01d167;
-}
-.item-icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 30px;
-}
-</style>

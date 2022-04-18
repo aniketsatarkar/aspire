@@ -78,33 +78,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style lang="scss">
-.q-drawer-container {
-  aside > div {
-    background-color: #0c365a !important;
-  }
-
-  .drawer-header {
-    margin-left: 40px;
-    margin-top: 40px;
-    padding-right: 20px;
-
-    .q-img {
-      width: 125px;
-      height: 35px;
-    }
-
-    p {
-      font-size: 15px;
-      color: #ffffff;
-      opacity: 0.3;
-      font-weight: 300;
-    }
-  }
-
-  .q-list {
-    margin-top: 65px;
-  }
-}
-</style>

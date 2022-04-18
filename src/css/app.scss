@@ -1,4 +1,460 @@
-// app global css in SCSS form
+// -------- card ui --------
+.card-ui {
+  cursor: default;
+
+  .show-card-number {
+    text-align: right;
+    margin-bottom: 8px;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    margin: 0px;
+    padding: 5px 10px 15px 10px;
+    position: relative;
+    top: 10px;
+    position: relative;
+    margin-left: auto;
+
+    .q-img {
+      width: 16px;
+      height: 16px;
+    }
+
+    span {
+      font-size: 12px;
+      font-weight: 500;
+      padding-left: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .card {
+    background-color: $primary;
+    border-radius: 10px;
+    z-index: 10;
+
+    .aspire {
+      padding: 28px;
+      .q-img {
+        width: 84px;
+        height: 24p;
+      }
+    }
+
+    .card-name {
+      font-size: 24px;
+      color: #fff;
+      padding-left: 24px;
+      font-weight: 500;
+    }
+
+    .card-number {
+      font-size: 14px;
+      color: #fff;
+      padding-left: 24px;
+      margin-top: 15px;
+
+      .card-number-end {
+        letter-spacing: 4px;
+      }
+    }
+
+    .card-date {
+      margin-top: 15px;
+      .date {
+        font-size: 14px;
+        color: #fff;
+        padding-left: 20px;
+        line-height: 34px;
+      }
+    }
+
+    .card-cvv {
+      font-size: 14px;
+      color: #fff;
+      padding-left: 24px;
+
+      .cvv {
+        font-size: 24px;
+        vertical-align: middle;
+      }
+    }
+
+    .card-logo {
+      padding-right: 22px;
+      padding-bottom: 22px;
+
+      .q-img {
+        width: 84px;
+        height: 24p;
+      }
+    }
+  }
+}
+
+.q-carousel {
+  background-color: transparent;
+  margin-bottom: -40px;
+
+  button {
+    font-size: 0.5em !important;
+  }
+  .q-carousel__slide {
+    justify-content: unset !important;
+  }
+  .q-carousel__navigation--bottom {
+    bottom: 50px !important;
+  }
+}
+
+.card-freez {
+  opacity: 0.7;
+}
+
+.dot {
+  height: 9px;
+  width: 9px;
+  margin-right: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+// -------- card details --------
+.card-details {
+  margin: 10px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #f5f9ff;
+  box-shadow: 0px 0px 8px 0px #00000014;
+
+  .q-img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+// -------- card options --------
+.option-card {
+  height: 116px;
+  background-color: #edf3ff;
+  padding-top: 1.5em;
+  margin: 0px 12px 0px 12px;
+
+  .option-img {
+    text-align: center;
+
+    .q-img {
+      width: 32px;
+      height: 32px;
+      margin: auto;
+      display: block;
+    }
+  }
+
+  .option-text {
+    text-align: -webkit-center;
+    margin-top: 5px;
+
+    span {
+      word-break: break-word;
+      width: 65px;
+      display: block;
+    }
+  }
+}
+
+// -------- phone menu --------
+.phone-menu {
+  padding: 10px 0px 10px 0px;
+  margin: 0px;
+  box-shadow: 0px 0px 8px 0px #00000014;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  .menu-img {
+    text-align: center;
+
+    .q-img {
+      width: 24px;
+      margin: auto;
+      display: block;
+    }
+  }
+
+  .menu-title {
+    text-align: -webkit-center;
+    margin-top: 5px;
+
+    span {
+      word-break: break-word;
+      width: 65px;
+      display: block;
+      font-size: 9px;
+      color: #dddddd;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .active span {
+      color: $primary;
+    }
+  }
+}
+
+.page-header {
+  padding-left: 25px;
+  padding-right: 25px;
+
+  .header-container {
+    font-size: 14px;
+    margin-bottom: 18px;
+    color: white;
+    margin-top: 15px;
+  }
+
+  .q-img {
+    width: 26px;
+    height: 26px;
+    padding: 0px 10px 10px 0px;
+  }
+
+  .currency-box {
+    padding: 2px 13px 2px 13px;
+    background-color: #01d167;
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 4px;
+    align-self: center;
+  }
+
+  .amount {
+    font-size: 26px;
+    display: inline-block;
+    font-weight: 700;
+    padding: 2px 13px 2px 13px;
+    color: white;
+  }
+
+  .new-card-btn {
+    .q-img {
+      width: 16px;
+      height: 16px;
+    }
+    span {
+      margin-left: 10px;
+    }
+  }
+}
+
+.scroll-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  .fixed {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+  }
+
+  .scrollable {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    z-index: 1000;
+  }
+
+  .list-container {
+    padding: 0px 10px 0px 10px;
+  }
+
+  .q-card {
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .q-card__section {
+    padding: 0px;
+  }
+}
+
+// -------- transactions --------
+.transaction {
+  padding: 15px;
+  border-bottom: 1px solid #f5f5f5;
+  background-color: white;
+  cursor: pointer;
+
+  .storage {
+    width: 48px;
+    height: 48px;
+    background-color: #009dff1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .q-img {
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .date {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #aaaaaa;
+  }
+
+  .info {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #325baf;
+    margin-top: 10px;
+
+    span {
+      width: 24px;
+      height: 20px;
+      background-color: #325baf;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 5px;
+    }
+
+    .q-img {
+      height: 10px;
+      width: 10px;
+    }
+  }
+
+  .amount {
+    font-weight: 800;
+    line-height: 1em;
+
+    .q-img {
+      width: 6.5px;
+      height: 12px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.transactions {
+  margin: 10px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #f5f9ff;
+  box-shadow: 0px 0px 8px 0px #00000014;
+
+  .q-img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+// -------- helpers --------
 .cursor-pointer {
   cursor: pointer;
+}
+
+.menu-item-section {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.menu-item-lable {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.menu-item-lable-active {
+  color: $primary;
+}
+
+.menu-item-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 30px;
+}
+
+.view-all-btn {
+  padding: 15px;
+  background-color: #edfff5;
+  text-align: center;
+  border: 1px solid #ddffec;
+  color: $primary;
+  font-weight: 500;
+}
+
+// -------- drawer container --------
+.q-drawer-container {
+  aside > div {
+    background-color: $secondary !important;
+  }
+
+  .drawer-header {
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-right: 20px;
+
+    .q-img {
+      width: 125px;
+      height: 35px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #ffffff;
+      opacity: 0.3;
+      font-weight: 300;
+    }
+  }
+
+  .q-list {
+    margin-top: 65px;
+  }
+}
+
+// -------- media query --------
+@media (min-width: 767px) {
+  .option-card {
+    border-radius: 15px;
+  }
+
+  .q-carousel {
+    margin-top: -20px;
+  }
+
+  .option-card {
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .option-card {
+    border-radius: 15px 15px 0px 0px;
+    margin: 0px !important;
+  }
+
+  .q-carousel {
+    margin-top: 0px;
+  }
+
+  .option-card {
+    border-radius: 15px 15px 0px 0px;
+    margin: 0px !important;
+  }
 }
